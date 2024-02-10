@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <bead>
+    <title>Cart Quanitiy</title>
+    <body>
+      <button onclick="
+      console.log(`cart quanitiy: ${cartQuantity}`);
+        ">Show Quantity</button>
+
+      <button onclick="
+      //cartQuantity = cartQuantity +1; shortcut used
+      //cartQuantity +=1;
+      cartQuantity++;
+
+      console.log(`cart quanitiy: ${cartQuantity}`);
+      ">Add to Cart</button>
+
+      <button onclick=" 
+      //cartQuantity = cartQuantity +2;
+      cartQuantity +=2;
+      console.log(`cart quanitiy: ${cartQuantity}`);
+
+      ">+2</button>
+
+      <button onclick=" 
+      //cartQuantity = cartQuantity +3;
+      cartQuantity +=3;
+      console.log(`cart quanitiy: ${cartQuantity}`);
+      ">+3</button>
+
+      <button onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset.');
+      console.log(`cart quanitiy: ${cartQuantity}`);
+      ">Reset Cart</button>
+
+      <script>
+        let cartQuantity = 0;
+      </script>
+    </body>
+  </bead>
+</html>
